@@ -11,7 +11,7 @@ class BoostLocaleConan(ConanFile):
     default_options = "use_icu=False"
    
     def requirements(self):
-        self.requires.add("Boost.Level11Group/1.65.1@bincrafters/testing")
+        self.requires.add("Boost.Level11Group/1.65.1@bincrafters/stable")
 
     def configure(self):
         self.options["Boost.Level11Group"].use_icu = self.options.use_icu 
